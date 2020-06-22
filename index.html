@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráficos</title>
+  <link rel="stylesheet" href="style1.css">  
+</head>
+<body>
+
+  <header class="cabecalho">
+   
+    <nav class="menu">
+      <div class="div">
+        <button class="button" id="btn" onlick="Grafico()">ADICIONAR GRÁFICO</button> 
+        <button class="button" id="betn" onlick="del()">DELETAR GRÁFICO</button> 
+        <input type="search" id="number">
+        <div id="resultado"></div>
+        <div id="resultado1"></div>
+      </div>
+    </nav>
+  
+  </header>  
+  
+  <main> 
+
+  <div class="container" id="tet">  
+      <div class="tradingview" id="Graf"></div>
+  </div>
+  
+
+  </main> 
+
+</body>
+
+<script src="script.js" type="text/javascript"> </script>
+
+</html>
+

@@ -1,0 +1,87 @@
+/* Basic CSS resets*/
+* {
+	margin: 0px;
+	border: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: rgba(61, 60, 60, 0.425);
+}
+
+.cabecalho {
+  background: #333;
+  border-bottom: solid 5px #4faddb;
+  width: 100%;
+  height: 80px;
+  box-sizing: content-box;
+  position: fixed;
+  z-index: 2;
+}
+
+.button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  border: solid 2px #4CAF50;
+  transition-duration: 0.4s;
+}
+
+.button:hover,
+.button a.selected {
+  background-color: #4faddb;
+  color: #000;
+}
+
+.menu {     
+  padding: 20px;
+  position: relative;
+}
+
+.cabecalho a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.3em;
+}
+
+.menu a {
+  padding: 20px;
+}
+
+.container{
+    width: 100%;
+}
+
+.tradingview {
+    top: 90px;
+    position: relative;
+    min-width: 400px;
+    float: left;
+    width: 24%;
+    height: 300px;
+    margin-left: 0%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+/* Quantidade de graficos de acordo com tamanho da tela */
+
+  @media only screen and (max-width: 820px) {
+    .tradingview {        
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .tradingview {
+        width: 100%;
+    }
+  }
+
